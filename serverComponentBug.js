@@ -1,0 +1,1 @@
+In Next.js 15, an uncommon error can occur when using server components with dynamic imports within a `use` statement.  If the imported module uses an environment variable that isn't available during the server-side rendering (SSR) phase, it will cause an error. This is because server components execute on the server before any client-side hydration happens.
